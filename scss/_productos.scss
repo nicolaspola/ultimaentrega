@@ -1,0 +1,64 @@
+.main-productos {
+  margin-top: $margen-top;
+  @include flex(flex, column, center, center);
+  h2 {
+    font-size: 1.5rem;
+    font-weight: $peso-titulos;
+    text-align: center;
+  }
+  .listado-productos {
+    @include flex (flex, row, center, center);
+    flex-wrap: wrap;
+    gap: $gap-contenedores;
+    .producto-destacado-uno{
+      margin-top: 3rem;     
+      .info-productos{
+        height: 40%;
+        background-image: url(../img/body/fondo3.jpg);
+        background-size: cover;
+        border-bottom-left-radius: 0.2rem;
+        border-bottom-right-radius: 0.2rem;
+        padding: 0.09rem;
+        .titulo-info {
+          font-size: 0.7rem;
+          color: black;
+          font-weight: $peso-titulos;
+        }
+        .precio-info {
+          font-size: 0.9rem;
+          font-weight: $peso-titulos;
+          color: black;
+        }
+        .descripcion-info {
+          display: none;
+        }
+        .boton-padre {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .boton-info {
+            text-align: center;
+            background-color: #c8dcb2;
+            border-radius: 0.2rem;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            color: black;
+            transition: 0.8s;
+          }
+          .boton-info:hover {
+            transition: 0.8s;
+            background-color: #e6ebe1;
+          }
+        }
+      }
+      @extend %producto-uno
+    }
+  }
+}
+
+.paginas {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  background: none;
+}

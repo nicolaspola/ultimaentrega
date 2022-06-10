@@ -1,0 +1,75 @@
+//EXTEND
+
+%producto-uno {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  width: 10rem;
+  height: 16rem;
+  background-image: url(../img/productos/producto2.jpg);
+  background-size: contain;
+  background-position: center;
+  box-shadow: 2px 6px 20px rgba(75, 75, 75, 0.742);
+  border-radius: 0.2rem;
+}
+
+%taller-uno {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 16rem;
+  height: 16rem;
+  background-image: url(../img/talleres/taller5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 2px 6px 20px rgba(75, 75, 75, 0.742);
+  border-radius: 0.2rem;
+}
+
+%taller-dos{
+  background-image: url(../img/talleres/fondomain22.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 22rem;
+  height: 17rem;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: 2px 6px 20px rgba(75, 75, 75, 0.742);
+}
+
+%boton-info {
+  text-align: center;
+  background-color: #c8dcb2;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  color: black;
+  transition: 0.8s;
+}
+
+%boton-catalogo {
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  background-color: #98b27b;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  box-shadow: 2px 6px 20px rgba(75, 75, 75, 0.742);
+  transition: 0.8s;
+  margin-top: 2rem;
+}
+
+%boton-talleres {
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  background-color: #98b27b;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  box-shadow: 2px 6px 20px rgba(75, 75, 75, 0.742);
+  transition: 0.8s;
+  margin-top: 2rem;
+}

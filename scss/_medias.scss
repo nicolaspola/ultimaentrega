@@ -1,0 +1,174 @@
+//MEDIA QUERIES
+
+/*-----MEDIA QUERIES-----*/
+
+@import "utilities/variables";
+
+@media screen and (min-width: 766px) {
+  /*MQ NAV*/
+
+  header {
+    .nav-btn {
+      display: none;
+    }
+    .nav-menu {
+      position: relative;
+      height: 8rem;
+      top: 0;
+      background: none;
+      transition: none;
+      text-align: right;
+      margin-right: 2rem;
+      li {
+        display: inline-block;
+        line-height: 8rem;
+        margin: 1rem;
+        transition: none;
+        a {
+          font-size: $fuente-mediana;
+          padding: 0.5rem;
+          transition: $transition-hover;
+        }
+      }
+    }
+  }
+
+  /*MQ INDEX*/
+  /*mq section uno*/
+  .section-uno {
+    .titulo-section {
+      .creaciones {
+        width: 70%;
+      }
+      .img-profe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  /*mq section dos*/
+  .section-dos {
+    .productos-destacados {
+      gap: 6rem;
+      .producto-destacado-uno {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 14rem;
+        height: 23rem;
+        .info-productos {
+          padding: 0.5rem;
+          .descripcion-info {
+            display: block;
+            font-size: 0.8rem;
+            margin-top: -1rem;
+          }
+        }
+      }
+    }
+  }
+
+  /*mq section tres*/
+  .section-tres {
+    .proximos-talleres {
+      gap: 6rem;
+      .taller-uno {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 18rem;
+        height: 23rem;
+        .info-talleres {
+          padding: 0.3rem;
+          .descripcion-taller {
+            display: block;
+            font-size: 0.8rem;
+            margin-top: -1rem;
+          }
+        }
+      }
+    }
+  }
+  /*MQ FOOTER*/
+  .footer-padre {
+    .footer-uno {
+      img {
+        width: 20%;
+      }
+    }
+    .footer-dos {
+      p {
+        font-size: $fuente-mediana;
+      }
+    }
+    .footer-tres {
+      p {
+        font-size: $fuente-mediana;
+      }
+    }
+    .footer-cuatro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 2rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      p {
+        margin-top: 1rem;
+        font-size: $fuente-mediana;
+      }
+    }
+  }
+
+  //HTML NOSOTROS
+
+  /*MQ HTML NOSOTROS*/
+
+  .caja-nosotros {
+    flex-direction: row;
+    padding: 6rem;
+    img {
+      width: 40%;
+    }
+  }
+
+  #carouselExampleFadee {
+    width: 50%;
+    margin-top: $margen-top;
+  }
+
+  /*MQ HTML PRODUCTOS*/
+
+  .listado-productos {
+    .producto-destacado-uno {
+      margin-right: 4rem;
+    }
+  }
+
+  /*HTML TALLERES*/
+  .contenedor-talleres {
+    .section-talleres {
+      .row-taller {
+        @include flex(flex, row, space-around, center);
+        .taller {
+          background-image: url(../img/talleres/fondomain22.jpg);
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          width: 28rem;
+          height: 17rem;
+          display: flex;
+          flex-direction: row-reverse;
+        }
+        .especificacion-taller {
+          width: 45%;
+        }
+      }
+    }
+  }
+  
+  
+}

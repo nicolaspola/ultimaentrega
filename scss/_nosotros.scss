@@ -1,0 +1,38 @@
+//HTML nosotros
+/*HTML NOSOTROS*/
+
+.caja-nosotros {
+    @include flex (flex, column, center, center);
+    padding: $padding-contenedores;
+    gap: $gap-contenedores;
+    .texto-nosotros {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      h1 {
+        font-size: $titulo-principal;
+        font-weight: $peso-titulos;
+      }
+      h2 {
+        font-size: $titulo-principal;
+        font-weight: $peso-titulos;
+      }
+    }
+    img {
+      box-shadow: $sombra-cajas;
+      width: 90%;
+    }
+  }
+  
+  .carrusel-dos {
+    margin-top: $margen-cajas;
+    @include flex (flex, column, center, center);
+    h2 {
+      font-size: $titulo-principal;
+      font-weight: $peso-titulos;
+    }
+  }
+  #carouselExampleFadee {
+    width: 75%;
+  }
+  

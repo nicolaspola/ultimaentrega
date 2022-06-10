@@ -1,0 +1,63 @@
+.contenedor-talleres {
+  .section-talleres {
+    margin-top: 5rem;
+    .row-taller {
+      @include flex(flex, column, center, center);
+      justify-content: space-evenly;
+      margin-bottom: 10rem;
+      .taller {
+        @extend %taller-dos;
+        .info-taller {
+          background-image: url(../img/body/fondo3.jpg);
+          background-size: cover;
+          width: 40%;
+          padding: 1rem;
+          .taller-titulo {
+            font-size: 1rem;
+            font-weight: $peso-titulos;
+            text-align: center;
+          }
+          .taller-descripcion {
+            text-align: center;
+          }
+        }
+      }
+      .especificacion-taller {
+        margin-top: $margen-top;
+        width: 80%;
+        .esp-titulo {
+          font-size: 1.1rem;
+          font-weight: $peso-titulos;
+        }
+        .esp-hora {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        .esp-ubicacion {
+          font-size: $fuente-mediana;
+        }
+        .esp-texto {
+          font-size: 0.9rem;
+        }
+        .esp-texto-dos {
+          font-size: 0.9rem;
+        }
+        .esp-boton {
+          background-color: #c8dcb2;
+          width: fit-content;
+          height: fit-content;
+          text-align: center;
+          border-radius: 0.2rem;
+          padding: 0.2rem;
+          box-shadow: $sombra-cajas;
+          transition: 0.8s;
+        }
+        .esp-boton:hover {
+          background-color: #d2e7bb;
+          transition: 0.8s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
